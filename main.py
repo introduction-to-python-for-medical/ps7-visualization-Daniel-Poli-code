@@ -7,5 +7,6 @@ data = fetch_openml(name='diabetes', version=1, as_frame=True)
 df = data.frame
 
 features = list(df.columns)
-
-fig, axs = plt
+print("Available features:", features)
+selected_features = [features[0], features[2]]
+print("Selected features: ", selected_features)
